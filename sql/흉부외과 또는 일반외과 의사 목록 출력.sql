@@ -1,0 +1,7 @@
+SELECT a.DR_NAME,
+       a.DR_ID, 
+       a.MCDP_CD,
+       DATE_FORMAT(a.HIRE_YMD,'%Y-%m-%d') as HIRE_YMD
+  FROM DOCTOR a
+ WHERE a.MCDP_CD IN('CS','GS')
+ ORDER BY a.HIRE_YMD DESC, a.DR_NAME;
