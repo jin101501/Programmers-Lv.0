@@ -2,7 +2,7 @@ using System;
 
 class Solution {
     public int solution(int[] num_list) {
-        String e = "" o = "";
+        String e = "" , o = "";
         
         for (int i = 0; i < num_list.Length ; i++) {
             if (num_list[i] % 2 == 0) {
